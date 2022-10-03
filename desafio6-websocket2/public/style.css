@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Productos */
+.products-title {
+  text-align: center;
+}
+.products-form {
+  background-color: aquamarine;
+}
+
+.product-label {
+  color: #1a1919;
+}
+
+.product-input {
+  width: 50%;
+}
+
+.product-btn {
+  background-color: blueviolet;
+}
+
+.btn-enviar {
+  color: #f1f1f1;
+}
+
+.btn-reset {
+  color: crimson;
+}
+
+/* history */
+.h2-table {
+  color: rgb(7, 7, 7);
+}
+.div-table {
+  background-color: #1a1919;
+  color: #f1f1f1;
+}
+
+.table {
+  color: whitesmoke;
+}
+.tr {
+  color: whitesmoke;
+}
+.th {
+  color: whitesmoke;
+}
+.td {
+  color: whitesmoke;
+}
+.img-table {
+  width: 50px;
+}
+
+/* Chat */
+.chat {
+  width: 75%;
+  height: 500px;
+  background-color: aqua;
+  color: rgb(7, 7, 7);
+}
+.form-chat {
+  background-color: rgb(100, 62, 14);
+}
+
+.title-chat {
+  font-size: 24px;
+  color: #1a1919;
+}
+.input-chat {
+  width: 300px;
+}
+
+.input-text {
+  width: 300px;
+}
+.btn-chat {
+  width: 150px;
+}
+.div-chat {
+  width: 75%;
+}
+
+/* otros */
+.error {
+  color: red;
+}

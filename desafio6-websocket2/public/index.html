@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+        integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Websocket Ayelen</title>
+</head>
+
+<body>
+    <h1>Formulario de Productos</h1>
+    <section>
+        <form class="products-form" action="/" method="post" id="form">
+            <h2 class="products-title">Ingrese su nuevo Producto.</h2>
+            <label class="product-label" for="titulo">Ingrese nombre del producto</label>
+            <input class="product-input" type="text" id="titulo" name="title"
+                placeholder="Ingrese nombre del producto" />
+            <label class="product-label" for="precio">Precio del producto</label>
+            <input class="product-input" type="number" id="precio" name="price"
+                placeholder="Ingrese precio del producto" />
+            <label class="product-label" for="imagen">URL del producto</label>
+            <input class="product-input" type="text" id="imagen" name="thumbnail"
+                placeholder="Ingrese URL del producto" />
+            <button class="product-btn btn-enviar" type="submit">Enviar</button>
+            <button class="product-btn btn-reset " type="reset">Reset</button>
+        </form>
+    </section>
+    <span></span>
+    <section>
+        <div id="history"></div>
+    </section>
+    <span></span>
+    <section>
+        <div class="chat" id="chat-container">
+
+            <form id="form-chat">
+                <h3 class="title-chat">Centro de Mensajes</h3>
+                <input class="input-chat" id="input-email" type="text" placeholder="Email Address: juan@coderhouse.com"
+                    required />
+                <input class="input-text" id="input-text" type="text" placeholder="Write your messages" required />
+                <button class="btn-chat" type="submit">SEND</button>
+                <hr />
+                <div id="chat" class="div-chat"></div>
+                <hr />
+            </form>
+        </div>
+    </section>
+    </main>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
