@@ -1,0 +1,35 @@
+<h3> Productos </h3>
+<br />
+{{#if mostrarProductos}}
+  <div class="table-responsive">
+    <table style="width: 75%; ">
+      <tr class="text-warning">
+        <th class="font-weight-bold">Nombre</th>
+        <th class="font-weight-bold">Precio</th>
+        <th class="font-weight-bold">Imagen</th>
+      </tr>
+      {{#each products}}
+        <tr>
+          <td style="width: 25%;">
+            {{this.title}}
+          </td>
+          <td style="width: 25%;">
+            $
+            {{this.price}}
+          </td>
+          <td style="width: 25%;">
+            <img
+              src={{this.thumbnail}}
+              alt={{this.title}}
+              style="border-radius:5px; width:100px; margin:5px; padding:5px;"
+            />
+          </td>
+        </tr>
+      {{/each}}
+    </table>
+  </div>
+{{/if}}
+{{#else}}
+  <h3 style="background-color:rgb(247, 107, 107); font-size:24px;">No se
+    encontraron productos</h3>
+{{/else}}

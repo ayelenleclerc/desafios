@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Camiseta",
+    "price": 1500
+  },
+  {
+    "id": 2,
+    "name": "Camisa",
+    "price": 2500
+  },
+  {
+    "id": 3,
+    "name": "Pantalon",
+    "price": 3500
+  }
+]

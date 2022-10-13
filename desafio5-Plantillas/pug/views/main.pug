@@ -1,0 +1,25 @@
+block main  
+
+form(action='/productos' method='post')
+	label(for='title') Nombre
+	input(type='text' name='title' id='title')
+	label(for='price') Precio
+	input(type='text' name='price' id='price')
+	label(for='thumbnail') Imagen
+	input(type='text' name='thumbnail' id='thumbnail')
+	button(type="submit") Enviar
+div 
+#products
+    if products 
+        table 
+            tr 
+                th Nombre 
+                th Precio
+                th imagen 
+        each product in products
+            tr 
+            td= product.title
+            td= product.price 
+            td 
+                img(src=product.thumbnail style="width: 100px;") 
+
