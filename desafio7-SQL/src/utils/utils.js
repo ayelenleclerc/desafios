@@ -5,7 +5,7 @@ const formatMessage = (id, email, text) => {
     id,
     email,
     text,
-    time: moment().format("DD/MM/YYYY - HH:mm"),
+    time: moment().format("h: mm a"),
   };
 };
 

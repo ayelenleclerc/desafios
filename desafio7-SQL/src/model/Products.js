@@ -1,47 +1,49 @@
 const knex = require("knex");
 
-module.exports = class Product {
-  constructor(dbConfig, tableName) {
-    this.knex = knex(dbConfig);
-    this.tableName = tableName;
-  }
-  async createTable(tableName) {
-    const exists = await this.knex.schema.hasTable(this.tableName);
-    if (!exists) {
-      await this.knex.schema.createTable(tableName, (table) => {
-        table.increments("id").notNullable().primary();
-        table.string("title", 15).notNullable();
-        table.float("price").notNullable();
-        table.string("thumbnail").notNullable();
-      });
-    }
+class Products {
+  constructor(tableName, dbConfig) {
+    (this.table = tableName), (this.knex = knex(dbConfig));
+
+    this.knex.schema
+      .hasTable(this.table)
+      .then((exists) => {
+        if (!exists) {
+          return this.knex.schema.createTable(this.table, (table) => {
+            table.increments("id").notNullable().primary();
+            table.string("title", 100).notNullable();
+            table.string("thumbnail").notNullable();
+            table.float("price").notNullable();
+          });
+        }
+      })
+      .catch((err) => console.log("error en constructor", err));
   }
 
   async getAll() {
     try {
       const products = await this.knex
-        .from(this.tableName)
-        .select("id", "title", "price", "thumbnail");
+        .from(this.table)
+        .select("id", "title", "price" /* , "thumbnail" */);
       console.table(products);
       return products;
     } catch (error) {
       console.log(error);
     } finally {
-      this.knex.destroy();
+      /* this.knex.destroy() */
     }
   }
 
   async getById(id) {
     try {
       const product = await this.knex
-        .from(this.tableName)
+        .from(this.table)
         .select("id", "title", "price", "thumbnail")
         .where({ id: id });
       console.table(product);
     } catch (error) {
       console.log("error al obtener producto", error);
     } finally {
-      this.knex.destroy();
+      /* knex(this.config).destroy(); */
     }
   }
 
@@ -58,18 +60,23 @@ module.exports = class Product {
     };
 
     try {
-      await this.knex(this.tableName).insert(newProduct);
+      await this.knex(this.table).insert(newProduct);
     } catch (error) {
       console.log(error);
     } finally {
-      this.knex.destroy();
+      /* this.knex.destroy() */
     }
+
+    return {
+      message: "Product Created",
+      product: newProduct,
+    };
   }
 
   async update(id, product) {
     const { title, price, thumbnail } = product;
     try {
-      await this.knex.from(this.tableName).where({ id: id }).update({
+      await this.knex.from(this.table).where({ id: id }).update({
         title: title,
         price: price,
         thumbnail: thumbnail,
@@ -77,17 +84,21 @@ module.exports = class Product {
     } catch (error) {
       console.log("error al actualizar producto", error);
     } finally {
-      knex(this.config).destroy();
+      /* knex(this.config).destroy(); */
     }
+    return { message: "Product updated OK" };
   }
 
   async deleteById(id) {
     try {
-      await this.knex.from(this.tableName).where({ id }).del();
+      await this.knex.from(this.table).where({ id }).del();
     } catch (error) {
       console.log(error);
     } finally {
-      this.knex.destroy();
+      /*       this.knex.destroy() */
     }
+    return { message: "Products was deleted OK" };
   }
-};
+}
+
+module.exports = Products;

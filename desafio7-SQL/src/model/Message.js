@@ -1,28 +1,31 @@
 const knex = require("knex");
 
-module.exports = class Message {
-  constructor(dbConfig, tableName) {
-    this.tableName = tableName;
-    this.knex = knex(dbConfig);
+class Messages {
+  constructor(tableName, dbConfig) {
+    (this.table = tableName), (this.knex = knex(dbConfig));
+
+    this.knex.schema
+      .hasTable(this.table)
+      .then((exists) => {
+        if (!exists) {
+          return this.knex.schema.createTable(this.table, (table) => {
+            table.increments("id").notNullable().primary();
+            table.string("email", 100).notNullable();
+            table.string("message").notNullable();
+            table.string("date", 50).notNullable();
+          });
+        }
+      })
+      .catch((err) => console.log("error en constructor", err));
   }
-  async createTable() {
-    const exists = await this.knex.schema.hasTable(this.tableName);
-    if (!exists) {
-      await this.knex.schema.createTable(tableName, (table) => {
-        table.increments("id").notNullable().primary();
-        table.string("email").notNullable();
-        table.string("text").notNullable();
-        table.string("time").notNullable();
-      });
-    }
-  }
+
   async addMessage(data) {
     try {
       await this.knex(this.table).insert(data);
     } catch (error) {
       console.log("error al añadir mensaje", error);
     } finally {
-      this.knex.dest();
+      /* knex(this.config).destroy(); */
     }
   }
 
@@ -34,7 +37,9 @@ module.exports = class Message {
     } catch (error) {
       console.log("error al obtener mensajes", error);
     } finally {
-      this.knex.destroy();
+      /* knex(this.config).destroy(); */
     }
   }
-};
+}
+
+module.exports = Messages;

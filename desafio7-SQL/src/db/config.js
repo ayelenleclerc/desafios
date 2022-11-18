@@ -1,4 +1,4 @@
-const knex = require("knex");
+const path = require("path");
 module.exports = {
   mariaDB: {
     client: "mysql",
@@ -12,7 +12,7 @@ module.exports = {
   sqlite: {
     client: "sqlite3",
     connection: {
-      filename: "../db/sqlite/ecommerce.sqlite",
+      filename: path.resolve(__dirname, "./sqlite/chat.sqlite"),
     },
     useNullAsDefault: true,
   },
