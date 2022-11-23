@@ -7,7 +7,7 @@
         "lastname": "Soles",
         "age": "22",
         "alias": "Analia_Soles",
-        "avatar": "https://norfipc.com/img/facebook/avatars/05.png"
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181414/avatares/avatar-perro_1_ulj1yt.png"
       },
       "2@gmail.com": {
         "id": "2@gmail.com",
@@ -15,7 +15,7 @@
         "lastname": "Perez",
         "age": "12",
         "alias": "AleP",
-        "avatar": "https://norfipc.com/img/facebook/avatars/09.png"
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181414/avatares/avatar-vaca_1_qjilqh.png"
       },
       "3@gmail.com": {
         "id": "3@gmail.com",
@@ -23,7 +23,7 @@
         "lastname": "Urib",
         "age": "77",
         "alias": "Jurib",
-        "avatar": "http://127.0.0.1:8080/"
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181414/avatares/avatar-gato_1_j5uakw.png"
       },
       "4@gmail.com": {
         "id": "4@gmail.com",
@@ -31,7 +31,7 @@
         "lastname": "Uri",
         "age": "66",
         "alias": "Aluri",
-        "avatar": "https://norfipc.com/img/facebook/avatars/09.png"
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181414/avatares/avatar-mostro_1_j7grev.png"
       },
       "5@gmail.com": {
         "id": "5@gmail.com",
@@ -39,7 +39,7 @@
         "lastname": "Perez",
         "age": "22",
         "alias": "PPZ",
-        "avatar": "https://norfipc.com/img/facebook/avatars/04.png"
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181413/avatares/avatar-pajarraco_1_phbdeh.png"
       },
       "ayelen@gmail.com": {
         "id": "ayelen@gmail.com",
@@ -47,7 +47,7 @@
         "lastname": "Leclerc",
         "age": 40,
         "alias": "La_Aye",
-        "avatar": "estosesunURL.com"
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181413/avatares/avatar-chancho_1_h7ltoz.png"
       },
       "6@gmail.com": {
         "id": "6@gmail.com",
@@ -55,7 +55,7 @@
         "lastname": " Borbore",
         "age": 19,
         "alias": "MB",
-        "avatar": "estosesunURL.com"
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181413/avatares/avatar-conejo_1_tichnq.png"
       },
       "mail@gmail.com": {
         "id": "mail@gmail.com",
@@ -63,7 +63,7 @@
         "lastname": "Gonzalez",
         "age": 21,
         "alias": "Soflez",
-        "avatar": "url.com"
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181413/avatares/angry-avatar_1_gjbfzt.png"
       }
     },
     "messages": {

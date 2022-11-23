@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Tivis",
+    "price": "1150",
+    "thumbnail": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1657515919/Suarez/Productos/felfort/felfort_tivis_c70jfl.jpg",
+    "id": 1
+  },
+  {
+    "title": "Mentitas",
+    "price": "1293",
+    "thumbnail": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1657515919/Suarez/Productos/felfort/felfort_mentitas_x7lmdt.jpg",
+    "id": 2
+  },
+  {
+    "title": "Dos corazones",
+    "price": "1540",
+    "thumbnail": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1657515918/Suarez/Productos/felfort/felfort_dos_corazones_tlp3ne.jpg",
+    "id": 3
+  }
+]
