@@ -1,0 +1,220 @@
+{
+  "entities": {
+    "author": {
+      "1@gmail.com": {
+        "id": "1@gmail.com",
+        "name": "Analia",
+        "lastname": "Soles",
+        "age": "22",
+        "alias": "Analia_Soles",
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181414/avatares/avatar-perro_1_ulj1yt.png"
+      },
+      "2@gmail.com": {
+        "id": "2@gmail.com",
+        "name": "Ale",
+        "lastname": "Perez",
+        "age": "12",
+        "alias": "AleP",
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181414/avatares/avatar-vaca_1_qjilqh.png"
+      },
+      "3@gmail.com": {
+        "id": "3@gmail.com",
+        "name": "Juan",
+        "lastname": "Urib",
+        "age": "77",
+        "alias": "Jurib",
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181414/avatares/avatar-gato_1_j5uakw.png"
+      },
+      "4@gmail.com": {
+        "id": "4@gmail.com",
+        "name": "Ale",
+        "lastname": "Uri",
+        "age": "66",
+        "alias": "Aluri",
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181414/avatares/avatar-mostro_1_j7grev.png"
+      },
+      "5@gmail.com": {
+        "id": "5@gmail.com",
+        "name": "Pepito",
+        "lastname": "Perez",
+        "age": "22",
+        "alias": "PPZ",
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181413/avatares/avatar-pajarraco_1_phbdeh.png"
+      },
+      "ayelen@gmail.com": {
+        "id": "ayelen@gmail.com",
+        "name": "Ayelen",
+        "lastname": "Leclerc",
+        "age": 40,
+        "alias": "La_Aye",
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181413/avatares/avatar-chancho_1_h7ltoz.png"
+      },
+      "6@gmail.com": {
+        "id": "6@gmail.com",
+        "name": " Maria",
+        "lastname": " Borbore",
+        "age": 19,
+        "alias": "MB",
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181413/avatares/avatar-conejo_1_tichnq.png"
+      },
+      "mail@gmail.com": {
+        "id": "mail@gmail.com",
+        "name": "Sofía",
+        "lastname": "Gonzalez",
+        "age": 21,
+        "alias": "Soflez",
+        "avatar": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1669181413/avatares/angry-avatar_1_gjbfzt.png"
+      }
+    },
+    "messages": {
+      "1": {
+        "author": "1@gmail.com",
+        "text": "Probando 1 2 3",
+        "time": "23/11/2022, 22:41:43",
+        "id": 1
+      },
+      "2": {
+        "author": "1@gmail.com",
+        "text": "Probando 1 2 3",
+        "time": "23/11/2022, 22:41:43",
+        "id": 2
+      },
+      "3": {
+        "author": "2@gmail.com",
+        "text": "Que fueeeee",
+        "time": "23/11/2022, 22:50:01",
+        "id": 3
+      },
+      "4": {
+        "author": "2@gmail.com",
+        "text": "Donde estas?",
+        "time": "23/11/2022, 22:51:10",
+        "id": 4
+      },
+      "5": {
+        "author": "1@gmail.com",
+        "text": "Probando 1 2 3",
+        "time": "23/11/2022, 22:41:43",
+        "id": 5
+      },
+      "6": {
+        "author": "1@gmail.com",
+        "text": "Probando 1 2 3",
+        "time": "23/11/2022, 22:41:43",
+        "id": 6
+      },
+      "7": {
+        "author": "2@gmail.com",
+        "text": "Que fueeeee",
+        "time": "23/11/2022, 22:50:01",
+        "id": 7
+      },
+      "8": {
+        "author": "2@gmail.com",
+        "text": "Donde estas?",
+        "time": "23/11/2022, 22:51:10",
+        "id": 8
+      },
+      "9": {
+        "author": "1@gmail.com",
+        "text": "Holis",
+        "time": "23/11/2022, 22:54:19",
+        "id": 9
+      },
+      "10": {
+        "author": "2@gmail.com",
+        "text": "Que mas mi gente?",
+        "time": "23/11/2022, 23:01:55",
+        "id": 10
+      },
+      "11": {
+        "author": "1@gmail.com",
+        "text": "Probando 1 2 3",
+        "time": "23/11/2022, 23:03:20",
+        "id": 11
+      },
+      "12": {
+        "author": "1@gmail.com",
+        "text": "12",
+        "time": "23/11/2022, 23:05:30",
+        "id": 12
+      },
+      "13": {
+        "author": "2@gmail.com",
+        "text": "Hola",
+        "time": "23/11/2022, 23:06:32",
+        "id": 13
+      },
+      "14": {
+        "author": "3@gmail.com",
+        "text": "Hola hola",
+        "time": "23/11/2022, 23:07:30",
+        "id": 14
+      },
+      "15": {
+        "author": "4@gmail.com",
+        "text": "Aqui ando papa",
+        "time": "24/11/2022, 00:12:49",
+        "id": 15
+      },
+      "16": {
+        "author": "2@gmail.com",
+        "text": "Como estas?",
+        "time": "24/11/2022, 00:16:06",
+        "id": 16
+      },
+      "17": {
+        "author": "5@gmail.com",
+        "text": "Cuando voy a funcionar? ",
+        "time": "24/11/2022, 01:09:01",
+        "id": 17
+      },
+      "18": {
+        "author": "2@gmail.com",
+        "text": "Probanding ",
+        "time": "24/11/2022, 01:30:51",
+        "id": 18
+      },
+      "19": {
+        "author": "ayelen@gmail.com",
+        "text": "Hola",
+        "time": "24/11/2022 15:57:56",
+        "id": 19
+      },
+      "20": {
+        "author": "6@gmail.com",
+        "text": "funcionare?",
+        "time": "24/11/2022, 16:10:17",
+        "id": 20
+      },
+      "21": {
+        "author": "6@gmail.com",
+        "text": "Otro mensaje",
+        "time": "24/11/2022, 16:10:57",
+        "id": 21
+      },
+      "22": {
+        "author": "mail@gmail.com",
+        "text": "Probanding",
+        "time": "24/11/2022, 16:12:52",
+        "id": 22
+      },
+      "23": {
+        "author": "ayelen@gmail.com",
+        "text": "Soy pepe",
+        "time": "24/11/2022, 16:13:43",
+        "id": 23
+      },
+      "24": {
+        "author": "mail@gmail.com",
+        "text": "Probanding",
+        "time": "24/11/2022, 16:15:05",
+        "id": 24
+      }
+    }
+  },
+  "result": [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+    22, 23, 24
+  ]
+}
