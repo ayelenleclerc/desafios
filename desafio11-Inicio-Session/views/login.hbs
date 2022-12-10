@@ -1,5 +1,5 @@
 {{! LOGIN FORM }}
-<br>
+<br />
 <div class="container bg-light p-3 rounded">
   <h2 class="text-primary">Login de usuario</h2>
   <form action="login" method="post">
@@ -7,7 +7,12 @@
       <label for="title" class="form-label">Ingrese su nombre</label>
       <input type="text" class="form-control" name="name" />
     </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Ingrese su email</label>
+      <input type="email" class="form-control" name="email" />
+    </div>
     <button type="submit" class="btn btn-success">Enviar</button>
+    <button type="submit" class="btn btn-success">Registrarse</button>
   </form>
   <br />
 </div>
